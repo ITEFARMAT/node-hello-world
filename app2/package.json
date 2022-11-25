@@ -1,0 +1,18 @@
+{
+  "name": "node-hello-world",
+  "version": "1.0.0",
+  "description": "Node.js  example",
+  "author": "Mateusz Farynowicz<s.martinelli@gmail.com>",
+  "main": "app.js",
+  "license": "Apache-2.0",
+  "repository": {
+    "type" : "git",
+    "url" : "https://github.com/ITEFARMAT/node-hello-world.git"
+  },
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
