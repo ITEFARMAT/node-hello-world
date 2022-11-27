@@ -1,1 +1,1 @@
-docker build . -t sample-web-app1:latest   --no-cache
+docker build . -t sample-web-app:latest   --no-cache
