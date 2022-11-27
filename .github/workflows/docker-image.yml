@@ -27,9 +27,12 @@ jobs:
         username: ${{ secrets.DOCKER_LOGIN }}
         password: ${{ secrets.DOCKER_PASS }}
     -
+      name: Add SHORT_SHA env property with commit short sha
+      run: echo "SHORT_SHA=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
+    -
       name: Run Docker build
       uses: docker/build-push-action@v3
       with:
         context: .
         push: true
-        tags: agf127229/node-hello-world:"${{ env.GITHUB_SHA_SHORT }}"
+        tags: agf127229/node-hello-world:${SHORT_SHA}
