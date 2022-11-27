@@ -37,4 +37,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: ${{ env.APP_NAME }}:${{ env.GITHUB_SHA_SHORT }}
+        tags: "${{ env.APP_NAME }}:${{ env.GITHUB_SHA_SHORT }}"
