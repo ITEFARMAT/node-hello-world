@@ -32,4 +32,4 @@ jobs:
       with:
         context: .
         push: true
-        tags: agf127229/node-hello-world:${{ env.GITHUB_SHA_SHORT }}
+        tags: agf127229/node-hello-world:"${{ env.GITHUB_SHA_SHORT }}"
